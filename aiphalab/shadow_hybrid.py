@@ -233,27 +233,40 @@ class ShadowHybrid:
             if classes:
                 lines.append(f"  Classes:")
                 for cls in classes:
-                    methods = ', '.join(cls.get('methods', []))
-                    lines.append(f"    - {cls['name']}")
-                    if methods:
-                        lines.append(f"      Methods: {methods}")
-                    if cls['name'] in docstrings:
-                        lines.append(f"      Doc: {docstrings[cls['name']][:80]}...")
+                    if isinstance(cls, dict):
+                        methods = ', '.join(cls.get('methods', []))
+                        lines.append(f"    - {cls['name']}")
+                        if methods:
+                            lines.append(f"      Methods: {methods}")
+                        if cls['name'] in docstrings:
+                            lines.append(f"      Doc: {docstrings[cls['name']][:80]}...")
+                    else:
+                        # Handle case where cls might be a string
+                        lines.append(f"    - {cls}")
             
             # Funciones
             functions = analysis.get('functions', [])
             if functions:
                 lines.append(f"  Functions:")
                 for func in functions:
-                    params = ', '.join(func.get('params', []))
-                    lines.append(f"    - {func['name']}({params})")
-                    if func['name'] in docstrings:
-                        lines.append(f"      Doc: {docstrings[func['name']][:80]}...")
+                    if isinstance(func, dict):
+                        params = ', '.join(func.get('params', []))
+                        lines.append(f"    - {func['name']}({params})")
+                        if func['name'] in docstrings:
+                            lines.append(f"      Doc: {docstrings[func['name']][:80]}...")
+                    else:
+                        # Handle case where func might be a string
+                        lines.append(f"    - {func}")
             
             # Imports
             imports = analysis.get('imports', [])
             if imports:
-                import_modules = [imp['module'] for imp in imports]
+                import_modules = []
+                for imp in imports:
+                    if isinstance(imp, dict) and 'module' in imp:
+                        import_modules.append(imp['module'])
+                    elif isinstance(imp, str):
+                        import_modules.append(imp)
                 lines.append(f"  Imports: {', '.join(set(import_modules))}")
             
             # Estadísticas
