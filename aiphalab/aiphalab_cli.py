@@ -188,33 +188,34 @@ class AiphaLabCLI:
         print_success("✨ Configuración completada!")
         return True
     
-    def initialize_systems(self, system: str = "both"):
+    def initialize_systems(self, system: str = "both", force_analysis: bool = False):
         """
-        Inicializar sistemas
-        
+        Inicializar sistemas con opción de análisis completo
+
         Args:
             system: "v0", "v1", o "both"
+            force_analysis: Si True, hace análisis completo en lugar de incremental
         """
         try:
             from shadow_hybrid import ShadowHybrid
             from gemini_integration import GeminiShadow
-            
+
             if system in ["v0", "both"] and self.shadow_v0 is None:
                 print_system("Inicializando Aipha_0.0.1...", "v0")
                 self.shadow_v0 = ShadowHybrid(self.config['aipha_0_path'])
-                self.shadow_v0.analyze_codebase(force=False)
+                self.shadow_v0.analyze_codebase(force=force_analysis)
                 self.gemini_v0 = GeminiShadow(base_path=self.config['aipha_0_path'])
                 print_success("Aipha_0.0.1 listo")
-            
+
             if system in ["v1", "both"] and self.shadow_v1 is None:
                 print_system("Inicializando Aipha_1.0...", "v1")
                 self.shadow_v1 = ShadowHybrid(self.config['aipha_1_path'])
-                self.shadow_v1.analyze_codebase(force=False)
+                self.shadow_v1.analyze_codebase(force=force_analysis)
                 self.gemini_v1 = GeminiShadow(base_path=self.config['aipha_1_path'])
                 print_success("Aipha_1.0 listo")
-            
+
             return True
-        
+
         except Exception as e:
             print_error(f"Error inicializando: {e}")
             return False
@@ -244,8 +245,8 @@ class AiphaLabCLI:
     def show_dual_overview(self):
         """Mostrar resumen de ambos sistemas"""
         print_section("Resumen Dual de Sistemas", "dual")
-        
-        if not self.initialize_systems("both"):
+
+        if not self.initialize_systems("both", force_analysis=True):
             return
         
         try:
