@@ -1,0 +1,1030 @@
+[
+  {
+    "entry_id": "327af3a3-4be2-4c09-bcb1-0f5055d09974",
+    "timestamp": "2025-11-08T15:26:38.903054+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "",
+    "entry_hash": "0d990a3a1b91cfe9e7c4e70149b53ced5e7fb1dc78375ae1a6fa4808fcc02a72"
+  },
+  {
+    "entry_id": "ff09cfb6-57d6-4657-ab4f-3e04ea967723",
+    "timestamp": "2025-11-08T15:26:38.953552+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "0d990a3a1b91cfe9e7c4e70149b53ced5e7fb1dc78375ae1a6fa4808fcc02a72",
+    "entry_hash": "23725e5ed04e36ae6cd8dcca61a3282bf4f47325835174bfa944cf65723f6649"
+  },
+  {
+    "entry_id": "9377110b-1c57-4711-b10a-f5e91e6c63f9",
+    "timestamp": "2025-11-08T15:26:54.034312+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "23725e5ed04e36ae6cd8dcca61a3282bf4f47325835174bfa944cf65723f6649",
+    "entry_hash": "fdb00cdade72622a77bad989d2f673026419aaa4d68229c6f2b9f1c4f4c3b04a"
+  },
+  {
+    "entry_id": "8c40f69e-2e43-499d-baf0-1924f7f77c68",
+    "timestamp": "2025-11-08T15:26:54.080822+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "fdb00cdade72622a77bad989d2f673026419aaa4d68229c6f2b9f1c4f4c3b04a",
+    "entry_hash": "15ad6b1a1aa374cee50cd685b02d5e6c9a8ec36dd92f740f26a9e9943514851b"
+  }
+]

@@ -14,6 +14,13 @@ from typing import Optional, Dict, Any
 import json
 from datetime import datetime
 
+# Cargar variables de entorno desde .env
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv no está instalado, usar variables de entorno normales
+
 # Colores y símbolos
 class Colors:
     HEADER = '\033[95m'
@@ -148,15 +155,17 @@ class AiphaLabCLI:
         """Asistente de configuración"""
         print_header()
         print_section("Asistente de Configuración", "dual")
-        
+
         # Verificar API key
         print_info("Verificando API key...")
         if os.getenv('GEMINI_API_KEY'):
             key = os.getenv('GEMINI_API_KEY')
             print_success(f"GEMINI_API_KEY configurada (***{key[-4:]})")
+            print_info("API key cargada desde variables de entorno o .env")
         else:
             print_error("GEMINI_API_KEY no configurada")
-            print_warning("export GEMINI_API_KEY='tu_key'")
+            print_warning("Crea un archivo .env con: GEMINI_API_KEY=tu_api_key")
+            print_warning("O configura la variable: export GEMINI_API_KEY='tu_key'")
             return False
         
         # Configurar Aipha_0.0.1
@@ -224,7 +233,7 @@ class AiphaLabCLI:
         """Inicializar puente"""
         if self.bridge is not None:
             return True
-        
+
         try:
             from aipha_bridge import AiphaBridge
             print_info("Inicializando puente...")
@@ -238,8 +247,11 @@ class AiphaLabCLI:
             self.gemini_v1 = self.bridge.gemini
             print_success("Puente listo")
             return True
+        except ImportError:
+            # Silent failure for missing module - will be handled by caller
+            return False
         except Exception as e:
-            print_error(f"Error: {e}")
+            print_error(f"Error inicializando puente: {e}")
             return False
     
     def show_dual_overview(self):
@@ -419,10 +431,20 @@ class AiphaLabCLI:
     def learn_from_v1(self):
         """Aprender de Aipha_1.0"""
         print_section("Aprender de Aipha_1.0", "v1")
-        
-        if not self.initialize_bridge():
+
+        # Try to initialize bridge, but continue with basic functionality if it fails
+        bridge_available = self.initialize_bridge()
+        if not bridge_available:
+            print_warning("aipha_bridge no disponible. Funcionalidad limitada.")
+            print_info("Puedes usar las otras opciones del menú principal.")
+            print()
+            print_info("Funcionalidades disponibles actualmente:")
+            print("  • Consultar Aipha_0.0.1 (opción 3)")
+            print("  • Consultar Aipha_1.0 (opción 4)")
+            print("  • Buscar en Sistemas (opción 6)")
+            print("  • Ver Estadísticas (opción 8)")
             return
-        
+
         print(f"{Colors.BOLD}Temas disponibles:{Colors.ENDC}\n")
         print("  1. ATR (Average True Range)")
         print("  2. Integración PCE + ATR")
@@ -430,52 +452,67 @@ class AiphaLabCLI:
         print("  4. Roadmap de implementación")
         print("  5. Consulta libre")
         print()
-        
+
         choice = input(f"{Colors.CYAN}Opción: {Colors.ENDC}").strip()
-        
+
         print()
-        
+
         try:
             if choice == '1':
-                print_info("Generando guía de ATR...")
-                guide = self.bridge.get_atr_learning_guide()
-                print()
-                print(guide)
-            
+                if bridge_available:
+                    print_info("Generando guía de ATR...")
+                    guide = self.bridge.get_atr_learning_guide()
+                    print()
+                    print(guide)
+                else:
+                    print_error("Funcionalidad no disponible sin aipha_bridge")
+
             elif choice == '2':
-                print_info("Analizando integración PCE + ATR...")
-                analysis = self.bridge.analyze_pce_atr_integration()
-                print()
-                print(analysis)
-            
+                if bridge_available:
+                    print_info("Analizando integración PCE + ATR...")
+                    analysis = self.bridge.analyze_pce_atr_integration()
+                    print()
+                    print(analysis)
+                else:
+                    print_error("Funcionalidad no disponible sin aipha_bridge")
+
             elif choice == '3':
-                print_info("Buscando archivos de Capa 1...")
-                files = self.bridge.search_layer1_components()
-                print()
-                print(f"{Colors.BOLD}Archivos encontrados: {len(files)}{Colors.ENDC}\n")
-                for f in files[:15]:
-                    print(f"  {Colors.GREEN}{Symbols.FILE}{Colors.ENDC} {f}")
-            
+                if bridge_available:
+                    print_info("Buscando archivos de Capa 1...")
+                    files = self.bridge.search_layer1_components()
+                    print()
+                    print(f"{Colors.BOLD}Archivos encontrados: {len(files)}{Colors.ENDC}\n")
+                    for f in files[:15]:
+                        print(f"  {Colors.GREEN}{Symbols.FILE}{Colors.ENDC} {f}")
+                else:
+                    print_error("Funcionalidad no disponible sin aipha_bridge")
+
             elif choice == '4':
-                component = input(f"{Colors.CYAN}Componente a implementar: {Colors.ENDC}").strip()
-                if component:
-                    print()
-                    print_info(f"Generando roadmap para '{component}'...")
-                    roadmap = self.bridge.get_implementation_roadmap(component)
-                    print()
-                    print(roadmap)
-            
+                if bridge_available:
+                    component = input(f"{Colors.CYAN}Componente a implementar: {Colors.ENDC}").strip()
+                    if component:
+                        print()
+                        print_info(f"Generando roadmap para '{component}'...")
+                        roadmap = self.bridge.get_implementation_roadmap(component)
+                        print()
+                        print(roadmap)
+                else:
+                    print_error("Funcionalidad no disponible sin aipha_bridge")
+
             elif choice == '5':
-                topic = input(f"{Colors.CYAN}¿Sobre qué quieres aprender?: {Colors.ENDC}").strip()
-                if topic:
-                    print()
-                    print_info(f"Consultando sobre '{topic}'...")
-                    insights = self.bridge.get_quick_insights(topic)
-                    print()
-                    print(insights)
-            
+                if bridge_available:
+                    topic = input(f"{Colors.CYAN}¿Sobre qué quieres aprender?: {Colors.ENDC}").strip()
+                    if topic:
+                        print()
+                        print_info(f"Consultando sobre '{topic}'...")
+                        insights = self.bridge.get_quick_insights(topic)
+                        print()
+                        print(insights)
+                else:
+                    print_error("Funcionalidad no disponible sin aipha_bridge")
+
             # Opción de guardar
-            if choice in ['1', '2', '4', '5']:
+            if choice in ['1', '2', '4', '5'] and bridge_available:
                 print()
                 save = input(f"{Colors.CYAN}¿Guardar respuesta? (s/n): {Colors.ENDC}").strip().lower()
                 if save == 's':
@@ -491,7 +528,7 @@ class AiphaLabCLI:
                         elif choice == '5':
                             f.write(insights)
                     print_success(f"Guardado en: {filename}")
-        
+
         except Exception as e:
             print_error(f"Error: {e}")
     

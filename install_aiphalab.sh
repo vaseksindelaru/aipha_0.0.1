@@ -11,14 +11,28 @@ fi
 
 # Instalar dependencias
 echo "📦 Instalando dependencias..."
-pip install google-generativeai
+pip install python-dotenv google-generativeai
 
 # Verificar API key
 if [ -z "$GEMINI_API_KEY" ]; then
-    echo "⚠️  GEMINI_API_KEY no configurada"
-    read -p "Ingresa tu API key: " api_key
-    echo "export GEMINI_API_KEY='$api_key'" >> ~/.bashrc
-    export GEMINI_API_KEY="$api_key"
+    # Verificar si existe archivo .env
+    if [ -f ".env" ]; then
+        echo "📄 Cargando configuración desde .env..."
+        export GEMINI_API_KEY=$(grep GEMINI_API_KEY .env | cut -d '=' -f2)
+        if [ -n "$GEMINI_API_KEY" ]; then
+            echo "✅ GEMINI_API_KEY cargada desde .env"
+        else
+            echo "⚠️  .env existe pero no contiene GEMINI_API_KEY"
+            read -p "Ingresa tu API key: " api_key
+            echo "GEMINI_API_KEY=$api_key" >> .env
+            export GEMINI_API_KEY="$api_key"
+        fi
+    else
+        echo "⚠️  GEMINI_API_KEY no configurada"
+        read -p "Ingresa tu API key: " api_key
+        echo "GEMINI_API_KEY=$api_key" > .env
+        export GEMINI_API_KEY="$api_key"
+    fi
 fi
 
 # Hacer ejecutable
