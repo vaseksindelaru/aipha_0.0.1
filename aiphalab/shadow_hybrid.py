@@ -29,19 +29,33 @@ class ShadowHybrid:
     """
     
     def __init__(self, base_path: str = "../Aipha_0.0.1"):
+        print(f"[ShadowHybrid] Input base_path: '{base_path}' (tipo: {type(base_path)})")
+
         self.base_path = Path(base_path)
-        
-        # Inicializar Shadow Core (TU código)
-        self.core = ShadowCore()
+        print(f"[ShadowHybrid] Base path Path object: {self.base_path}")
+        print(f"[ShadowHybrid] Base path resolved: {self.base_path.resolve()}")
+
+        # Crear archivo de memoria único por sistema (solución profesional)
+        system_name = self.base_path.name  # Ej: "Aipha_0.0.1" o "aipha_1"
+        memory_file = f"shadow_memory_{system_name}.json"
+        print(f"[ShadowHybrid] Memoria dedicada: '{memory_file}'")
+
+        # Inicializar Shadow Core con memoria dedicada
+        self.core = ShadowCore(memory_file)
         print("[ShadowHybrid] Shadow Core inicializado")
-        
+
+        # Convertir a string para MCPs
+        base_path_str = str(self.base_path)
+        print(f"[ShadowHybrid] Base path string para MCPs: '{base_path_str}'")
+
         # Inicializar adaptadores MCP (probados, robustos)
-        self.mcps = MCPFactory.create_adapters(str(self.base_path))
+        self.mcps = MCPFactory.create_adapters(base_path_str)
         self.fs = self.mcps['filesystem']
         self.rg = self.mcps['ripgrep']
         self.git = self.mcps['git']
         self.cache = self.mcps['sqlite_cache']
-        
+
+        print(f"[ShadowHybrid] MCPs inicializados con base_path: '{base_path_str}'")
         print("[ShadowHybrid] Sistema híbrido listo\n")
     
     # === ANÁLISIS INTELIGENTE ===

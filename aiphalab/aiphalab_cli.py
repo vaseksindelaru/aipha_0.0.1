@@ -134,7 +134,7 @@ class AiphaLabCLI:
                 pass
         
         return {
-            'aipha_0_path': '../Aipha_0.0.1',
+            'aipha_0_path': '/home/vaclav/Aipha_0.0.1',
             'aipha_1_path': '/home/vaclav/aipha_1'
         }
     

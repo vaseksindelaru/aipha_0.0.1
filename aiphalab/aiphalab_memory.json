@@ -9130,5 +9130,7289 @@
     },
     "previous_entry_hash": "2dbe15fce08b101c0ba2ce801224d3a7a9114b4a3e7e098b816220a5f765469e",
     "entry_hash": "778009a363e67437a4d99978ec4b51fb4970fb3d4480067a3c4cd5bfd17dd855"
+  },
+  {
+    "entry_id": "62b7f8fe-b61a-4851-b457-c94a39a87e65",
+    "timestamp": "2025-11-08T10:57:35.765863+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aiphalab_cli.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aiphalab_cli.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "previous_entry_hash": "778009a363e67437a4d99978ec4b51fb4970fb3d4480067a3c4cd5bfd17dd855",
+    "entry_hash": "1923bbcf0eadc185b4198edca6bf295f3791239be457b4818ce9df2df6bcc8cf"
+  },
+  {
+    "entry_id": "8ef8d2ba-66f3-4fb6-8ce6-1c3d40a90b62",
+    "timestamp": "2025-11-08T10:57:35.831342+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "mcp_adapters.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "mcp_adapters.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "previous_entry_hash": "1923bbcf0eadc185b4198edca6bf295f3791239be457b4818ce9df2df6bcc8cf",
+    "entry_hash": "ac3cb89da49c2d99bcd74ec0697b9ae7c38b48f5186954b0abec8e191aa329fb"
+  },
+  {
+    "entry_id": "ea755f9f-4cf3-4641-89a3-818b95e080a6",
+    "timestamp": "2025-11-08T10:57:35.911957+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "shadow_hybrid.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "shadow_hybrid.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "previous_entry_hash": "ac3cb89da49c2d99bcd74ec0697b9ae7c38b48f5186954b0abec8e191aa329fb",
+    "entry_hash": "e33529b198c05eeb6c4196d22d51d4bef226b0e98fbd38bdd22c2974a7a42628"
+  },
+  {
+    "entry_id": "6c366e4d-28bf-46f4-b582-2e6dc116316b",
+    "timestamp": "2025-11-08T10:57:35.982673+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aiphalab_cli.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aiphalab_cli.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "previous_entry_hash": "e33529b198c05eeb6c4196d22d51d4bef226b0e98fbd38bdd22c2974a7a42628",
+    "entry_hash": "8af7064f9e812fb8867076cb0e4c796ff7dc837dc90d97bb01db9dbad4726456"
+  },
+  {
+    "entry_id": "78c9e980-c94a-44be-a98f-b2e4a190258a",
+    "timestamp": "2025-11-08T10:57:36.017300+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "mcp_adapters.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "mcp_adapters.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "previous_entry_hash": "8af7064f9e812fb8867076cb0e4c796ff7dc837dc90d97bb01db9dbad4726456",
+    "entry_hash": "3d59ecc73847d039bdfc54dfeee1282ea85df01905873f020272d647ca074c0e"
+  },
+  {
+    "entry_id": "13d9b15b-766b-4837-952e-2e8c9eba5763",
+    "timestamp": "2025-11-08T10:57:36.059524+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "shadow_hybrid.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "shadow_hybrid.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "previous_entry_hash": "3d59ecc73847d039bdfc54dfeee1282ea85df01905873f020272d647ca074c0e",
+    "entry_hash": "fafa05df3a7657f3afb04269c50c6a98653fbd7a4f98389b004407c03391aba2"
+  },
+  {
+    "entry_id": "4e5fffd2-a4b3-44d1-9121-868a8914af8a",
+    "timestamp": "2025-11-08T10:57:36.229902+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "fafa05df3a7657f3afb04269c50c6a98653fbd7a4f98389b004407c03391aba2",
+    "entry_hash": "19e7da27d1c3b8bbb673e3c1bdc836744eef536e6eb813891bc6bba73cdbcd01"
+  },
+  {
+    "entry_id": "0f6c9636-48e4-45df-b461-046fd5082a86",
+    "timestamp": "2025-11-08T10:57:36.316755+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "19e7da27d1c3b8bbb673e3c1bdc836744eef536e6eb813891bc6bba73cdbcd01",
+    "entry_hash": "c92a3eee828563a8f1c9f9bccfbcc018d96348126e6a08e0fc2f1bce7f289125"
+  },
+  {
+    "entry_id": "ad851c8b-20bc-4dfd-826a-7add4048238e",
+    "timestamp": "2025-11-08T10:59:22.936460+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aiphalab_cli.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aiphalab_cli.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "previous_entry_hash": "c92a3eee828563a8f1c9f9bccfbcc018d96348126e6a08e0fc2f1bce7f289125",
+    "entry_hash": "55b55bca5117332d6fe5ef74f50de73f61a842425c138b6970dae00f7fada029"
+  },
+  {
+    "entry_id": "5aa1c1fa-ae7f-4659-a366-09bafa4117eb",
+    "timestamp": "2025-11-08T10:59:22.973528+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "mcp_adapters.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "mcp_adapters.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "previous_entry_hash": "55b55bca5117332d6fe5ef74f50de73f61a842425c138b6970dae00f7fada029",
+    "entry_hash": "997f06b8f9f3d8038081486ccd5817623de5a4d7bd3be4d01107c66eda88ae0a"
+  },
+  {
+    "entry_id": "be9543be-47be-41bf-a6b8-980da8dc6adc",
+    "timestamp": "2025-11-08T10:59:23.008174+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "shadow_hybrid.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "shadow_hybrid.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "previous_entry_hash": "997f06b8f9f3d8038081486ccd5817623de5a4d7bd3be4d01107c66eda88ae0a",
+    "entry_hash": "4ea37c13f5d4128d3d9379ee44ceba5c78086988f604df654205755d1d627114"
+  },
+  {
+    "entry_id": "102c2e42-4655-4acc-b35a-2d02aef238d6",
+    "timestamp": "2025-11-08T10:59:23.052762+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aiphalab_cli.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aiphalab_cli.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "previous_entry_hash": "4ea37c13f5d4128d3d9379ee44ceba5c78086988f604df654205755d1d627114",
+    "entry_hash": "a71b1e3ad374f7f0622feb5a0b9c2e8662ea9b4335711f5882b9c5c770106760"
+  },
+  {
+    "entry_id": "34fe834b-2e4f-4570-9899-f328f13ffd2a",
+    "timestamp": "2025-11-08T10:59:23.091474+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "mcp_adapters.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "mcp_adapters.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "previous_entry_hash": "a71b1e3ad374f7f0622feb5a0b9c2e8662ea9b4335711f5882b9c5c770106760",
+    "entry_hash": "68f0501399bc895085bc6457b1300d29848a11075eb895c8e41592f12a13823a"
+  },
+  {
+    "entry_id": "d16bb2b2-7e68-4cc1-9ed0-888d7efa39d2",
+    "timestamp": "2025-11-08T10:59:23.125386+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "shadow_hybrid.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "shadow_hybrid.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "previous_entry_hash": "68f0501399bc895085bc6457b1300d29848a11075eb895c8e41592f12a13823a",
+    "entry_hash": "14070428dd65a898cc6df4a0c4073e02404e6c88a7ecdfdb943da0fa5c0e7436"
+  },
+  {
+    "entry_id": "c754d956-ccaa-4fc5-86b9-3f3277dbf2fe",
+    "timestamp": "2025-11-08T10:59:23.260773+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "14070428dd65a898cc6df4a0c4073e02404e6c88a7ecdfdb943da0fa5c0e7436",
+    "entry_hash": "2b7565a342afda26457ed9abae80fe8f82e7a47c4ade45568f69e49d7ee3abcc"
+  },
+  {
+    "entry_id": "0195ded6-86aa-4321-8bc4-81b128810bea",
+    "timestamp": "2025-11-08T10:59:23.354374+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "2b7565a342afda26457ed9abae80fe8f82e7a47c4ade45568f69e49d7ee3abcc",
+    "entry_hash": "4b8bc9ed70c61b6ca53ab8157977a86e041c5a5948d39594429f6482d887d3a8"
+  },
+  {
+    "entry_id": "30cd3d14-3d16-40cd-8d96-3a0fc09540a4",
+    "timestamp": "2025-11-08T11:03:06.048617+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aiphalab_cli.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aiphalab_cli.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "previous_entry_hash": "4b8bc9ed70c61b6ca53ab8157977a86e041c5a5948d39594429f6482d887d3a8",
+    "entry_hash": "2fb1a5a382ef24e5104524cbc9fea35c2772eff8ce6cc89b57149da3086eb4cc"
+  },
+  {
+    "entry_id": "5292ca80-b72e-4b78-85b0-74ef87957253",
+    "timestamp": "2025-11-08T11:03:06.085074+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "mcp_adapters.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "mcp_adapters.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "previous_entry_hash": "2fb1a5a382ef24e5104524cbc9fea35c2772eff8ce6cc89b57149da3086eb4cc",
+    "entry_hash": "f8376d30b2d5c9c4be5f880d5ec51ed77cff0b13cb986a2e085376f50742df32"
+  },
+  {
+    "entry_id": "585b70a0-2b39-4e9e-b15d-7d7580965029",
+    "timestamp": "2025-11-08T11:03:06.124327+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "shadow_hybrid.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "shadow_hybrid.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "previous_entry_hash": "f8376d30b2d5c9c4be5f880d5ec51ed77cff0b13cb986a2e085376f50742df32",
+    "entry_hash": "831fb30db75506987d4f55222a0c7bd47bee6380b906b385d7258036937bd1c0"
+  },
+  {
+    "entry_id": "d81aac0f-7d1b-4049-9f72-0c34b908fbdc",
+    "timestamp": "2025-11-08T11:03:06.176548+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aiphalab_cli.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aiphalab_cli.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/aiphalab_cli.py",
+      "classes": [
+        {
+          "name": "Colors",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "Symbols",
+          "bases": [],
+          "methods": [],
+          "decorators": []
+        },
+        {
+          "name": "AiphaLabCLI",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "load_config",
+            "save_config",
+            "setup_wizard",
+            "initialize_systems",
+            "initialize_bridge",
+            "show_dual_overview",
+            "interactive_query_v0",
+            "interactive_query_v1",
+            "compare_component",
+            "search_in_system",
+            "learn_from_v1",
+            "main_menu"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "print_header",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_section",
+          "params": [
+            "title",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_success",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_error",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_warning",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_info",
+          "params": [
+            "message"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_system",
+          "params": [
+            "message",
+            "system"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "print_menu",
+          "params": [
+            "options"
+          ],
+          "decorators": [],
+          "returns": null
+        },
+        {
+          "name": "main",
+          "params": [],
+          "decorators": [],
+          "returns": null
+        }
+      ],
+      "imports": [
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sys",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shadow_hybrid",
+          "name": "ShadowHybrid",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "gemini_integration",
+          "name": "GeminiShadow",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "aipha_bridge",
+          "name": "AiphaBridge",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "AiphaLab - Interfaz CLI Profesional con Consulta Dual\nConsulta Aipha_0.0.1 Y Aipha_1.0 simultáneamente\n\nVersión: 3.0.0 (Dual System)",
+        "print_header": "Header con diseño dual",
+        "print_section": "Imprime título de sección con indicador de sistema",
+        "print_system": "Print con indicador de sistema",
+        "print_menu": "Imprime menú",
+        "AiphaLabCLI": "Interfaz CLI con consulta dual de proyectos",
+        "main": "Punto de entrada"
+      },
+      "stats": {
+        "lines_of_code": 588,
+        "file_size": 22950,
+        "complexity": 74
+      }
+    },
+    "previous_entry_hash": "831fb30db75506987d4f55222a0c7bd47bee6380b906b385d7258036937bd1c0",
+    "entry_hash": "bc91741486c246c3eaf31e6dfc017e27cd3580994a666d6ea50ee90a9a039f3b"
+  },
+  {
+    "entry_id": "e381fdd7-ac28-4d75-b81b-fba3cf879cf6",
+    "timestamp": "2025-11-08T11:03:06.215599+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "mcp_adapters.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "mcp_adapters.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/mcp_adapters.py",
+      "classes": [
+        {
+          "name": "MCPAdapter",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "is_available"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "FilesystemMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "read_file",
+            "list_files",
+            "_is_binary",
+            "_fallback_read"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "RipgrepMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "search",
+            "_fallback_search"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "GitMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "get_changed_files",
+            "get_file_history",
+            "get_last_commit_date"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "SQLiteCacheMCPAdapter",
+          "bases": [
+            "MCPAdapter"
+          ],
+          "methods": [
+            "__init__",
+            "_init_db",
+            "get_cached_analysis",
+            "cache_analysis"
+          ],
+          "decorators": []
+        },
+        {
+          "name": "MCPFactory",
+          "bases": [],
+          "methods": [
+            "create_adapters"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "json",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "shutil",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sqlite3",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Adaptadores para MCPs profesionales.\nMantienen una interfaz limpia y controlada para Shadow.",
+        "MCPAdapter": "Clase base para adaptadores MCP",
+        "FilesystemMCPAdapter": "Adaptador para lectura de archivos.\nVENTAJA: Maneja encodings, permisos, archivos grandes automáticamente",
+        "RipgrepMCPAdapter": "Adaptador para búsqueda ultrarrápida con ripgrep\nVENTAJA: 100-1000x más rápido que búsqueda lineal en JSON",
+        "GitMCPAdapter": "Adaptador para análisis incremental con Git\nVENTAJA: Solo re-analiza archivos modificados (10-100x más rápido)",
+        "SQLiteCacheMCPAdapter": "Adaptador para cache eficiente con SQLite\nVENTAJA: Cache persistente, queries rápidas",
+        "MCPFactory": "Factory para crear adaptadores MCP\nManeja auto-detección y fallbacks"
+      },
+      "stats": {
+        "lines_of_code": 428,
+        "file_size": 13450,
+        "complexity": 36
+      }
+    },
+    "previous_entry_hash": "bc91741486c246c3eaf31e6dfc017e27cd3580994a666d6ea50ee90a9a039f3b",
+    "entry_hash": "97b34f109e51daa416201d94b1e0bd34a03422b5c8cd4b45acd6372166638678"
+  },
+  {
+    "entry_id": "31923006-f023-4214-b110-84e526a736c5",
+    "timestamp": "2025-11-08T11:03:06.255351+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "shadow_hybrid.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "shadow_hybrid.py",
+    "status": "success",
+    "details": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "data_payload": {
+      "file_path": "aiphalab/shadow_hybrid.py",
+      "classes": [
+        {
+          "name": "ShadowHybrid",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "analyze_codebase",
+            "_analyze_file_with_cache",
+            "search",
+            "_search_in_shadow",
+            "get_context_for_llm",
+            "get_component_details",
+            "get_system_overview",
+            "format_for_display"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [
+        {
+          "name": "create_shadow_hybrid",
+          "params": [
+            "base_path"
+          ],
+          "decorators": [],
+          "returns": "ShadowHybrid"
+        }
+      ],
+      "imports": [
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Optional",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "shadow_core",
+          "name": "ShadowCore",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "MCPFactory",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "FilesystemMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "RipgrepMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "GitMCPAdapter",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "mcp_adapters",
+          "name": "SQLiteCacheMCPAdapter",
+          "alias": null,
+          "type": "from"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {
+        "module": "Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.\n\nARQUITECTURA:\n- Shadow Core: Análisis especializado (TU control)\n- MCPs: Operaciones genéricas (probado, robusto)\n- Híbrido: Mejor de ambos mundos",
+        "ShadowHybrid": "Sistema híbrido que combina Shadow Core con MCPs profesionales\n\nVENTAJAS:\n1. Análisis especializado (Shadow Core)\n2. Operaciones genéricas optimizadas (MCPs)\n3. Cache inteligente (SQLite MCP)\n4. Análisis incremental (Git MCP)\n5. Búsqueda ultrarrápida (Ripgrep MCP)",
+        "create_shadow_hybrid": "Crea una instancia de Shadow Hybrid\n\nUso:\n    shadow = create_shadow_hybrid()\n    shadow.analyze_codebase()\n    context = shadow.get_context_for_llm()"
+      },
+      "stats": {
+        "lines_of_code": 392,
+        "file_size": 14689,
+        "complexity": 50
+      }
+    },
+    "previous_entry_hash": "97b34f109e51daa416201d94b1e0bd34a03422b5c8cd4b45acd6372166638678",
+    "entry_hash": "e2675971c9046003142e20eb4c66b5f957cedb90aca8570b801a592bb746fe8e"
+  },
+  {
+    "entry_id": "41916aa7-ee6a-420d-a9fa-854aa2d29ec3",
+    "timestamp": "2025-11-08T11:03:06.392701+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "e2675971c9046003142e20eb4c66b5f957cedb90aca8570b801a592bb746fe8e",
+    "entry_hash": "96a49d87810fa738c17b95e0473ee09cfedb62c6e19a926a2da33c99800ba456"
+  },
+  {
+    "entry_id": "c53b9ba1-c89d-448f-a949-ff52f1a0b7f3",
+    "timestamp": "2025-11-08T11:03:06.467698+00:00",
+    "version_id": "AiphaLab_1.0",
+    "source_component": "aipha_shadow.py",
+    "entry_category": "CODE_ANALYSIS",
+    "action": "PYTHON_FILE_ANALYZED",
+    "agent": "ShadowCore",
+    "component": "aipha_shadow.py",
+    "status": "success",
+    "details": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "data_payload": {
+      "file_path": "shadow/aipha_shadow.py",
+      "classes": [
+        {
+          "name": "AiphaShadow",
+          "bases": [],
+          "methods": [
+            "__init__",
+            "_load_config",
+            "_setup_llms",
+            "sync_with_repository",
+            "query",
+            "_load_aipha_context",
+            "_add_local_project_context",
+            "_add_github_repo_context",
+            "_get_simulated_repo_content",
+            "_query_openai",
+            "_query_gemini",
+            "_query_claude"
+          ],
+          "decorators": []
+        }
+      ],
+      "functions": [],
+      "imports": [
+        {
+          "module": "dotenv",
+          "name": "load_dotenv",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "os",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "chromadb",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "sentence_transformers",
+          "name": "SentenceTransformer",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "openai",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "google.generativeai",
+          "alias": "genai",
+          "type": "import"
+        },
+        {
+          "module": "pathlib",
+          "name": "Path",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "yaml",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "logging",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "requests",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "typing",
+          "name": "Dict",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "Any",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "typing",
+          "name": "List",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "datetime",
+          "name": "datetime",
+          "alias": null,
+          "type": "from"
+        },
+        {
+          "module": "argparse",
+          "alias": null,
+          "type": "import"
+        },
+        {
+          "module": "subprocess",
+          "alias": null,
+          "type": "import"
+        }
+      ],
+      "constants": [],
+      "decorators": [],
+      "docstrings": {},
+      "stats": {
+        "lines_of_code": 1857,
+        "file_size": 65508,
+        "complexity": 61
+      }
+    },
+    "previous_entry_hash": "96a49d87810fa738c17b95e0473ee09cfedb62c6e19a926a2da33c99800ba456",
+    "entry_hash": "1bcc74b1060d1e18ef5a97409de437894b72330f732ee5755a8f92c37491d36d"
   }
 ]

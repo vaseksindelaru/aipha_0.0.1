@@ -193,9 +193,18 @@ class GitMCPAdapter(MCPAdapter):
         # Auto-detectar si git está disponible
         if enabled is None:
             enabled = shutil.which('git') is not None
-        
+
         super().__init__(enabled)
-        self.repo_path = Path(repo_path)
+
+        # Debug: ver qué está llegando
+        print(f"[GitMCP] Init con repo_path: '{repo_path}' (tipo: {type(repo_path)})")
+
+        # Convertir a Path y luego a string absoluto
+        repo_path_obj = Path(repo_path)
+        self.repo_path = str(repo_path_obj.resolve())
+        print(f"[GitMCP] Repo path convertido: '{self.repo_path}'")
+        print(f"[GitMCP] Path existe: {Path(self.repo_path).exists()}")
+        print(f"[GitMCP] Es directorio: {Path(self.repo_path).is_dir()}")
     
     def get_changed_files(self, since: str = "HEAD~1") -> List[str]:
         """
