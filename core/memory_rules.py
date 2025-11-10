@@ -48,7 +48,7 @@ class CriticalMemoryRules:
     Si falla cualquier paso: ROLLBACK AUTOMÁTICO.
     """
     
-    SNAPSHOTS_DIR = Path("aipha/core/snapshots")
+    SNAPSHOTS_DIR = Path("core/snapshots")
     SNAPSHOTS_DIR.mkdir(parents=True, exist_ok=True)
     
     @classmethod
