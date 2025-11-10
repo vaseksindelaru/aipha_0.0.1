@@ -1,9 +1,9 @@
-# aiphalab/shadow_hybrid.py
+# aiphalab/hybrid.py
 """
-Shadow Hybrid - Orquestador inteligente que combina Shadow Core con MCPs.
+Hybrid - Orquestador inteligente que combina Core con MCPs.
 
 ARQUITECTURA:
-- Shadow Core: Análisis especializado (TU control)
+- Core: Análisis especializado (TU control)
 - MCPs: Operaciones genéricas (probado, robusto)
 - Híbrido: Mejor de ambos mundos
 """
@@ -12,16 +12,16 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any
 import os
 
-from shadow_core import ShadowCore
+from core import Core
 from mcp_adapters import MCPFactory, FilesystemMCPAdapter, RipgrepMCPAdapter, GitMCPAdapter, SQLiteCacheMCPAdapter
 
 
-class ShadowHybrid:
+class Hybrid:
     """
-    Sistema híbrido que combina Shadow Core con MCPs profesionales
+    Sistema híbrido que combina Core con MCPs profesionales
     
     VENTAJAS:
-    1. Análisis especializado (Shadow Core)
+    1. Análisis especializado (Core)
     2. Operaciones genéricas optimizadas (MCPs)
     3. Cache inteligente (SQLite MCP)
     4. Análisis incremental (Git MCP)
@@ -29,24 +29,24 @@ class ShadowHybrid:
     """
     
     def __init__(self, base_path: str = "../Aipha_0.0.1"):
-        print(f"[ShadowHybrid] Input base_path: '{base_path}' (tipo: {type(base_path)})")
+        print(f"[Hybrid] Input base_path: '{base_path}' (tipo: {type(base_path)})")
 
         self.base_path = Path(base_path)
-        print(f"[ShadowHybrid] Base path Path object: {self.base_path}")
-        print(f"[ShadowHybrid] Base path resolved: {self.base_path.resolve()}")
+        print(f"[Hybrid] Base path Path object: {self.base_path}")
+        print(f"[Hybrid] Base path resolved: {self.base_path.resolve()}")
 
         # Crear archivo de memoria único por sistema (solución profesional)
         system_name = self.base_path.name  # Ej: "Aipha_0.0.1" o "aipha_1"
-        memory_file = f"shadow_memory_{system_name}.json"
-        print(f"[ShadowHybrid] Memoria dedicada: '{memory_file}'")
+        memory_file = f"memory_{system_name}.json"
+        print(f"[Hybrid] Memoria dedicada: '{memory_file}'")
 
-        # Inicializar Shadow Core con memoria dedicada
-        self.core = ShadowCore(memory_file)
-        print("[ShadowHybrid] Shadow Core inicializado")
+        # Inicializar Core con memoria dedicada
+        self.core = Core(memory_file)
+        print("[Hybrid] Core inicializado")
 
         # Convertir a string para MCPs
         base_path_str = str(self.base_path)
-        print(f"[ShadowHybrid] Base path string para MCPs: '{base_path_str}'")
+        print(f"[Hybrid] Base path string para MCPs: '{base_path_str}'")
 
         # Inicializar adaptadores MCP (probados, robustos)
         self.mcps = MCPFactory.create_adapters(base_path_str)
@@ -55,8 +55,8 @@ class ShadowHybrid:
         self.git = self.mcps['git']
         self.cache = self.mcps['sqlite_cache']
 
-        print(f"[ShadowHybrid] MCPs inicializados con base_path: '{base_path_str}'")
-        print("[ShadowHybrid] Sistema híbrido listo\n")
+        print(f"[Hybrid] MCPs inicializados con base_path: '{base_path_str}'")
+        print("[Hybrid] Sistema híbrido listo\n")
     
     # === ANÁLISIS INTELIGENTE ===
     
@@ -70,7 +70,7 @@ class ShadowHybrid:
         - Cache SQLite para archivos sin cambios
         - 10-100x más rápido para re-análisis
         """
-        print("[ShadowHybrid] Iniciando análisis...")
+        print("[Hybrid] Iniciando análisis...")
         
         if force:
             print("  Modo: Análisis completo (forzado)")
@@ -97,7 +97,7 @@ class ShadowHybrid:
             elif result == 'cached':
                 cached_count += 1
         
-        print(f"\n[ShadowHybrid] Análisis completado:")
+        print(f"\n[Hybrid] Análisis completado:")
         print(f"  ✅ Archivos analizados: {analyzed_count}")
         print(f"  ⚡ Desde cache: {cached_count}")
         print(f"  📊 Total: {analyzed_count + cached_count}")
@@ -129,7 +129,7 @@ class ShadowHybrid:
         if not content:
             return 'skipped'
         
-        # Analizar (usando Shadow Core)
+        # Analizar (usando Core)
         analysis = self.core.analyze_python_file(Path(file_path), content)
         
         # Registrar análisis
@@ -158,15 +158,15 @@ class ShadowHybrid:
         if search_type in ['hybrid', 'text']:
             # Búsqueda de texto con ripgrep (ultrarrápida)
             if self.rg.enabled:
-                print(f"[ShadowHybrid] Búsqueda de texto con ripgrep: '{query}'")
+                print(f"[Hybrid] Búsqueda de texto con ripgrep: '{query}'")
                 text_results = self.rg.search(query)
                 results['text_matches'] = text_results
             else:
-                print("[ShadowHybrid] Ripgrep no disponible, usando fallback")
+                print("[Hybrid] Ripgrep no disponible, usando fallback")
         
         if search_type in ['hybrid', 'structural']:
             # Búsqueda estructurada en Shadow (contexto rico)
-            print(f"[ShadowHybrid] Búsqueda estructurada en Shadow: '{query}'")
+            print(f"[Hybrid] Búsqueda estructurada en Shadow: '{query}'")
             structural_results = self._search_in_shadow(query)
             results['structural_matches'] = structural_results
         
@@ -214,7 +214,7 @@ class ShadowHybrid:
         """
         lines = []
         
-        lines.append("=== AIPHA_0.0.1 SYSTEM CONTEXT (SHADOW HYBRID) ===\n")
+        lines.append("=== AIPHA_0.0.1 SYSTEM CONTEXT (HYBRID) ===\n")
         
         # Resumen del sistema
         summary = self.core.get_memory_summary()
@@ -359,23 +359,23 @@ class ShadowHybrid:
 
 # === FUNCIÓN DE USO FÁCIL ===
 
-def create_shadow_hybrid(base_path: str = "../Aipha_0.0.1") -> ShadowHybrid:
+def create_hybrid(base_path: str = "../Aipha_0.0.1") -> Hybrid:
     """
-    Crea una instancia de Shadow Hybrid
+    Crea una instancia de Hybrid
     
     Uso:
-        shadow = create_shadow_hybrid()
+        shadow = create_hybrid()
         shadow.analyze_codebase()
         context = shadow.get_context_for_llm()
     """
-    return ShadowHybrid(base_path)
+    return Hybrid(base_path)
 
 
 # === EJEMPLO DE USO ===
 
 if __name__ == "__main__":
     # Crear sistema híbrido
-    shadow = create_shadow_hybrid()
+    shadow = create_hybrid()
     
     # Análisis incremental (rápido)
     shadow.analyze_codebase(force=False)

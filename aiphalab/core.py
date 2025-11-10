@@ -1,6 +1,6 @@
-# aiphalab/shadow_core.py
+# aiphalab/core.py
 """
-Shadow Core - Sistema de análisis especializado para Aipha.
+Core - Sistema de análisis especializado para Aipha.
 Enfocado en análisis AST y estructura, delega operaciones genéricas a MCPs.
 """
 
@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 
-class ShadowCore:
+class Core:
     """
     Core de Shadow - Solo análisis especializado
     
@@ -68,7 +68,7 @@ class ShadowCore:
             "source_component": component,
             "entry_category": category,
             "action": action,
-            "agent": "ShadowCore",
+            "agent": "Core",
             "component": component,
             "status": "success",
             "details": details,

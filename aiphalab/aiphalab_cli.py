@@ -352,10 +352,10 @@ class AiphaLabCLI:
         print_info("Verificando componentes Shadow...")
         
         try:
-            from shadow_hybrid import ShadowHybrid
-            print_success("✓ shadow_hybrid disponible")
+            from hybrid import ShadowHybrid
+            print_success("✓ hybrid disponible")
         except ImportError:
-            print_error("✗ shadow_hybrid no encontrado")
+            print_error("✗ hybrid no encontrado")
             all_ok = False
         
         # Resumen
@@ -484,7 +484,7 @@ class AiphaLabCLI:
         
         try:
             # Inicializar Shadow Híbrido
-            from shadow_hybrid import ShadowHybrid
+            from hybrid import ShadowHybrid
             
             # Crear LLM provider según configuración
             provider_name = self.config.get('llm_provider', 'gemini')

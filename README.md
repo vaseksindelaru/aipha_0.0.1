@@ -1,23 +1,26 @@
 # AiphaLab - Sistema de Análisis de Código con IA
 
-![AiphaLab Logo](https://img.shields.io/badge/AiphaLab-1.0.0-blue?style=for-the-badge&logo=python&logoColor=white)
+![AiphaLab Logo](https://img.shields.io/badge/AiphaLab-3.1.0-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.8+-green?style=flat-square&logo=python)
 ![Gemini](https://img.shields.io/badge/Gemini-AI-orange?style=flat-square&logo=google)
+![Moonshot](https://img.shields.io/badge/Moonshot-Kimi-purple?style=flat-square&logo=openai)
 ![License](https://img.shields.io/badge/License-MIT-red?style=flat-square)
 
-> **AiphaLab** es un sistema avanzado de análisis de código que combina análisis estático inteligente con capacidades de IA generativa para proporcionar insights profundos sobre bases de código complejas.
+> **AiphaLab** es un sistema avanzado de análisis de código que combina análisis estático inteligente con capacidades de IA generativa para proporcionar insights profundos sobre bases de código complejas. Ahora con soporte multi-LLM (Gemini y Moonshot AI).
 
 ## 🚀 Características Principales
 
 ### 🤖 Análisis Inteligente
-- **Shadow Core**: Análisis AST profundo de código Python
-- **Shadow Hybrid**: Sistema híbrido con MCPs profesionales
+- **Core**: Análisis AST profundo de código Python
+- **Hybrid**: Sistema híbrido con MCPs profesionales
 - **Memoria Persistente**: Cache inteligente con SQLite
 - **Verificación de Integridad**: Hashes SHA-256 para integridad de datos
+- **Multi-LLM Support**: Integración con Gemini y Moonshot AI (Kimi)
+- **Consulta Dual**: Análisis simultáneo de Aipha_0.0.1 y Aipha_1.0
 
 ### 🔍 Búsqueda Avanzada
 - **Búsqueda Híbrida**: Combina ripgrep (veloz) con análisis estructural
-- **Consultas Naturales**: Procesamiento de lenguaje natural con Gemini
+- **Consultas Naturales**: Procesamiento de lenguaje natural con Gemini/Moonshot
 - **Filtros Avanzados**: Por componente, categoría, agente, estado, etiquetas
 
 ### 📊 Estadísticas y Reportes
@@ -30,6 +33,11 @@
 - **Ripgrep MCP**: Búsqueda ultrarrápida de texto
 - **Git MCP**: Análisis incremental de cambios
 - **SQLite Cache MCP**: Cache inteligente persistente
+
+### 🤖 Proveedores LLM
+- **Google Gemini**: Modelos avanzados de IA generativa
+- **Moonshot AI (Kimi)**: IA especializada en razonamiento
+- **Configuración Flexible**: Cambia entre proveedores fácilmente
 
 ## 📦 Instalación
 
@@ -47,11 +55,15 @@ cd aipha_0.0.1
 ### Opción 2: Instalación Manual
 
 ```bash
-# Instala dependencias
-pip install google-generativeai
+# Instala dependencias (elige tu proveedor LLM)
+pip install google-generativeai  # Para Gemini
+# O
+pip install openai              # Para Moonshot AI
 
-# Configura API key
+# Configura API key (elige uno)
 export GEMINI_API_KEY="tu_api_key_aqui"
+# O
+export MOONSHOT_API_KEY="tu_api_key_aqui"
 
 # Haz ejecutable el CLI
 chmod +x aiphalab/aiphalab_cli.py
@@ -78,8 +90,9 @@ python aiphalab_cli.py
     ║    ██║  ██║██║██║     ██║  ██║██║  ██║███████╗██║  ██║  ║
     ║    ╚═╝  ╚═╝╚═╝╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝  ║
     ║                                                           ║
-    ║              Sistema de Análisis de Código con IA        ║
-    ║                      Versión 1.0.0                        ║
+    ║         🔵 AIPHA_0.0.1  🔄  AIPHA_1.0 🟢                 ║
+    ║              🧠 Multi-LLM Support                         ║
+    ║                   Versión 3.1.0                           ║
     ╚═══════════════════════════════════════════════════════════╝
     ======================================================================
 
@@ -87,7 +100,7 @@ Selecciona una opción:
 
   1. ⚙️ Asistente de Configuración
   2. 📊 Analizar Codebase
-  3. 🤖 Modo Interactivo (Gemini)
+  3. 🤖 Modo Interactivo (Gemini/Moonshot)
   4. 📁 Ver Resumen del Sistema
   5. 🔍 Buscar en Código
   6. 📊 Ver Estadísticas
@@ -113,17 +126,18 @@ El asistente verifica automáticamente:
 - 📦 Componentes analizados: 15
 - 📝 Entradas en memoria: 63
 
-### 5. Modo Interactivo con Gemini
+### 5. Modo Interactivo Multi-LLM
 ```bash
 → Opción: 3
 ```
+El asistente configura automáticamente el proveedor LLM seleccionado y permite consultas interactivas.
 
 ```
-🤖 GEMINI SHADOW - MODO INTERACTIVO
+🤖 GEMINI/MOONSHOT HYBRID - MODO INTERACTIVO
 
 🔍 Pregunta: ¿Cuál es la arquitectura de Aipha_0.0.1?
 
-💭 Consultando a Gemini...
+💭 Consultando a [Gemini/Moonshot]...
 ```
 
 ## 🏗️ Arquitectura
@@ -131,28 +145,23 @@ El asistente verifica automáticamente:
 ```
 AiphaLab/
 ├── aiphalab_cli.py          # 🖥️  Interfaz CLI profesional
-├── shadow_core.py           # 🧠 Núcleo de análisis AST
-├── shadow_hybrid.py         # 🔄 Orquestador híbrido MCPs
+├── core.py                  # 🧠 Núcleo de análisis AST
+├── hybrid.py                # 🔄 Orquestador híbrido MCPs
 ├── mcp_adapters.py          # 🔌 Adaptadores MCP profesionales
-├── memory_system.py         # 💾 Sistema de memoria persistente
-├── shadow_query.py          # 🔍 Procesador de consultas inteligentes
 ├── gemini_integration.py    # 🤖 Integración con Gemini AI
-├── self_analysis.py         # 🔄 Auto-análisis del sistema
-├── change_detector.py       # 👀 Detector de cambios
-├── analyze_aipha_1.py       # 📊 Analizador de Aipha_1.0
-└── setup_shadow.py          # ⚙️  Configuración del sistema
+└── memory files             # 💾 Archivos de memoria persistente
 ```
 
 ### Componentes Clave
 
-#### Shadow Core
+#### Core
 - **Propósito**: Análisis especializado de código Python
 - **Tecnología**: AST parsing, análisis estático
 - **Características**: Extrae clases, funciones, imports, docstrings
 
-#### Shadow Hybrid
+#### Hybrid
 - **Propósito**: Orquestador inteligente
-- **Tecnología**: Combina Shadow Core con MCPs
+- **Tecnología**: Combina Core con MCPs
 - **Características**: Cache inteligente, análisis incremental
 
 #### MCP Adapters
@@ -164,29 +173,34 @@ AiphaLab/
 ## 📚 API de Uso Programático
 
 ```python
-from shadow_hybrid import ShadowHybrid
+from hybrid import Hybrid
 
 # Inicializar sistema
-shadow = ShadowHybrid(base_path="./tu_proyecto")
+hybrid = Hybrid(base_path="./tu_proyecto")
 
 # Analizar codebase
-shadow.analyze_codebase(force=True)
+hybrid.analyze_codebase(force=True)
 
 # Buscar en código
-resultados = shadow.search("Shadow", search_type='hybrid')
+resultados = hybrid.search("query", search_type='hybrid')
 
 # Obtener contexto para LLM
-contexto = shadow.get_context_for_llm()
+contexto = hybrid.get_context_for_llm()
 
 # Ver resumen
-resumen = shadow.get_system_overview()
+resumen = hybrid.get_system_overview()
 ```
 
 ## 🔧 Configuración Avanzada
 
 ### Variables de Entorno
 ```bash
-export GEMINI_API_KEY="tu_api_key"
+# Elige tu proveedor LLM
+export GEMINI_API_KEY="tu_api_key"        # Para Gemini
+# O
+export MOONSHOT_API_KEY="tu_api_key"      # Para Moonshot AI
+
+# Configuración adicional
 export AIPHALAB_CACHE_DIR="./cache"
 export AIPHALAB_MEMORY_FILE="./aiphalab_memory.json"
 ```
@@ -235,7 +249,8 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 🙏 Agradecimientos
 
-- **Google Gemini**: Por capacidades de IA generativa
+- **Google Gemini**: Por capacidades de IA generativa avanzadas
+- **Moonshot AI (Kimi)**: Por IA especializada en razonamiento
 - **Aipha Community**: Por inspiración y feedback
 - **Python AST**: Por análisis estático poderoso
 
