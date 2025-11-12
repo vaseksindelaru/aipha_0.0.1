@@ -71,6 +71,7 @@ class CriticalMemoryRules:
                     snapshot
                 )
             
+            
             # PASO 3: Dry Run Sintáctico
             if not cls._syntax_check(proposal.diff_content):
                 return cls._rollback(
@@ -113,6 +114,9 @@ class CriticalMemoryRules:
     def _create_snapshot(cls) -> Snapshot:
         """PASO 1: Crear snapshot completo del proyecto con rsync"""
         try:
+            # Ensure snapshots directory exists
+            cls.SNAPSHOTS_DIR.mkdir(parents=True, exist_ok=True)
+
             source_path = Path.cwd()
             timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
             snapshot_id = f"snap_{timestamp}_{hashlib.md5(str(source_path).encode()).hexdigest()[:8]}"
@@ -150,7 +154,7 @@ class CriticalMemoryRules:
                 json.dump({
                     "snapshot_id": snapshot_id,
                     "timestamp": snapshot.timestamp,
-                    "source_path": source_path,
+                    "source_path": str(source_path),
                     "file_count": file_count,
                     "checksum": checksum
                 }, f, indent=2)
@@ -281,34 +285,34 @@ class CriticalMemoryRules:
         try:
             backup_path = Path(snapshot.backup_path)
             source_path = Path.cwd()
-            
+
             if not backup_path.exists():
                 return (ChangeStatus.FAILED, f"Rollback failed: snapshot not found {snapshot_id}")
-            
-            # Limpiar directorio actual (preservar .git)
+
+            # Limpiar directorio actual (preservar .git y core)
             for item in source_path.iterdir():
-                if item.name == ".git":
+                if item.name in [".git", "core"]:
                     continue
                 if item.is_file():
                     item.unlink()
                 else:
                     shutil.rmtree(item)
-            
+
             # Restaurar desde backup
             rsync_cmd = [
-                "rsync", "-av", "--exclude", ".git",
+                "rsync", "-av", "--exclude", ".git", "--exclude", "core",
                 f"{backup_path}/", f"{source_path}/"
             ]
-            
+
             result = subprocess.run(rsync_cmd, capture_output=True, text=True)
             if result.returncode != 0:
                 return (ChangeStatus.FAILED, f"Rollback rsync failed: {result.stderr}")
-            
+
             # Limpiar snapshot después de rollback exitoso
             shutil.rmtree(backup_path)
-            
+
             return (ChangeStatus.ROLLBACK, f"Rolled back to {snapshot_id}. Reason: {reason}")
-            
+
         except Exception as e:
             return (ChangeStatus.FAILED, f"Critical rollback failure: {str(e)}")
     
