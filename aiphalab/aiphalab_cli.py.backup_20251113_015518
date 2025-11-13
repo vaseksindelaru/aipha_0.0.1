@@ -22,14 +22,6 @@ try:
 except ImportError:
     print_warning("python-dotenv no está instalado. Usa: pip install python-dotenv")
 
-# Importar Bridge para integración con Aipha_0.0.1
-try:
-    from aipha_bridge import AiphaBridge
-    BRIDGE_AVAILABLE = True
-except ImportError:
-    BRIDGE_AVAILABLE = False
-    print_warning("⚠️  aipha_bridge no disponible. Funcionalidad reducida.")
-
 # Colores y símbolos
 class Colors:
     HEADER = '\033[95m'
@@ -247,32 +239,17 @@ class AiphaLabCLI:
     def __init__(self):
         self.config_file = Path.home() / ".aiphalab" / "config.json"
         self.config = self.load_config()
-
+        
         # Shadows para ambos sistemas
         self.shadow_v0 = None
         self.shadow_v1 = None
-
+        
         # LLM providers para ambos sistemas
         self.llm_v0 = None
         self.llm_v1 = None
-
+        
         # Bridge
         self.bridge = None
-
-        # ============================================================
-        # AGREGAR ESTAS LÍNEAS NUEVAS
-        # ============================================================
-
-        # NUEVO: Bridge para Aipha_0.0.1
-        if BRIDGE_AVAILABLE:
-            try:
-                # Obtener ruta de Aipha_0.0.1 desde config
-                aipha_path = self.config.get('aipha_0_path', '/home/vaclav/aipha_0.0.1')
-                self.bridge = AiphaBridge(aipha_root=aipha_path)
-                print_success("✓ Bridge Aipha_0.0.1 inicializado")
-            except Exception as e:
-                print_warning(f"Bridge no pudo inicializarse: {e}")
-                self.bridge = None
     
     def load_config(self) -> Dict[str, Any]:
         """Cargar configuración"""
@@ -756,204 +733,7 @@ class AiphaLabCLI:
         
         except Exception as e:
             print_error(f"Error: {e}")
-
-    def show_aipha_status(self):
-        """Mostrar estado completo de Aipha_0.0.1"""
-        print_section("Estado de Aipha_0.0.1", "v0")
-
-        if not self.bridge:
-            print_error("Bridge no disponible. Verifica aipha_bridge.py")
-            return
-
-        try:
-            status = self.bridge.get_system_status()
-
-            # Fase actual
-            print_info(f"Fase Actual: {status['current_phase']}")
-            print_info(f"Fase 0 (Base): {status['phase_0_status']}")
-            print()
-
-            # Componentes críticos
-            print(f"{Colors.BOLD}Componentes Críticos:{Colors.ENDC}")
-            components = status['components_status']
-            for comp, exists in components.items():
-                icon = "✅" if exists else "❌"
-                print(f"  {icon} {comp}")
-            print()
-
-            # Estadísticas del codebase
-            stats = status.get('codebase_stats', {})
-            if stats:
-                print(f"{Colors.BOLD}Estadísticas Codebase:{Colors.ENDC}")
-                print(f"  Total componentes: {stats.get('total_components', 0)}")
-                print(f"  Total entradas: {stats.get('total_entries', 0)}")
-                print()
-
-            # Acciones recientes
-            print(f"{Colors.BOLD}Acciones Recientes:{Colors.ENDC}")
-            recent = status.get('recent_actions', [])
-            if recent:
-                for action in recent[-5:]:
-                    timestamp = action['timestamp'][:19]
-                    agent = action['agent']
-                    desc = action['action']
-                    print(f"  [{timestamp}] {agent}: {desc}")
-            else:
-                print("  (No hay acciones registradas)")
-
-        except Exception as e:
-            print_error(f"Error obteniendo estado: {e}")
-            import traceback
-            traceback.print_exc()
-
-    def show_next_task(self):
-        """Obtener recomendación de siguiente tarea"""
-        print_section("Siguiente Tarea Recomendada", "v0")
-
-        if not self.bridge:
-            print_error("Bridge no disponible")
-            return
-
-        try:
-            task = self.bridge.get_next_task()
-
-            print(f"{Colors.BOLD}Fase:{Colors.ENDC} {task['phase']}")
-            print(f"{Colors.BOLD}Tarea:{Colors.ENDC} {task['task']}")
-            print(f"{Colors.BOLD}Archivo:{Colors.ENDC} {task.get('file', 'N/A')}")
-            print(f"{Colors.BOLD}Prioridad:{Colors.ENDC} {task.get('priority', 'N/A')}")
-            print()
-            print(f"{Colors.BOLD}Justificación:{Colors.ENDC}")
-            print(f"  {task['justification']}")
-            print()
-
-            proceed = input(f"{Colors.CYAN}¿Proceder con esta tarea? (s/n): {Colors.ENDC}").strip().lower()
-            if proceed == 's':
-                self.execute_dev_instruction(task['task'])
-
-        except Exception as e:
-            print_error(f"Error: {e}")
-
-    def execute_dev_instruction(self, instruction: str = None):
-        """Ejecutar instrucción del desarrollador"""
-        print_section("Ejecutar Instrucción Dev → Aipha", "v0")
-
-        if not self.bridge:
-            print_error("Bridge no disponible")
-            return
-
-        if not instruction:
-            instruction = input(f"{Colors.CYAN}Instrucción: {Colors.ENDC}").strip()
-
-        if not instruction:
-            print_warning("Instrucción vacía, cancelando")
-            return
-
-        print()
-        print_info(f"Procesando: '{instruction}'")
-
-        # Verificar LLM configurado
-        provider_name = self.config.get('llm_provider', 'gemini')
-        api_key = self.config.get(f"{provider_name}_api_key") or os.getenv(f"{provider_name.upper()}_API_KEY")
-
-        if not api_key:
-            print_error("No hay LLM configurado. Configura primero.")
-            return
-
-        try:
-            # Crear provider LLM
-            model = self.config.get('llm_model')
-            llm_provider = LLMFactory.create_provider(provider_name, api_key, model)
-
-            print()
-            print_info(f"Consultando a {provider_name}...")
-
-            # Procesar instrucción
-            result = self.bridge.process_dev_instruction(instruction, llm_provider)
-
-            if result['status'] == 'proposal_generated':
-                print()
-                print(f"{Colors.GREEN}{'='*70}{Colors.ENDC}")
-                print(result['proposal'])
-                print(f"{Colors.GREEN}{'='*70}{Colors.ENDC}")
-                print()
-
-                apply = input(f"{Colors.CYAN}¿Aplicar cambios? (s/n): {Colors.ENDC}").strip().lower()
-                if apply == 's':
-                    print_warning("⚠️  Aplicación real de cambios: Requiere formato ChangeProposal")
-                    print_info("Fase 2: Implementar conversión de propuesta a ChangeProposal")
-            else:
-                print_warning(f"Estado: {result['status']}")
-                print_info(f"Mensaje: {result.get('message', 'N/A')}")
-
-        except Exception as e:
-            print_error(f"Error: {e}")
-            import traceback
-            traceback.print_exc()
-
-    def view_action_history(self):
-        """Ver historial de acciones completo"""
-        print_section("Historial de Acciones", "v0")
-
-        if not self.bridge:
-            print_error("Bridge no disponible")
-            return
-
-        try:
-            # Filtros opcionales
-            print(f"{Colors.BOLD}Filtrar por agente:{Colors.ENDC}")
-            print("  1. Todos")
-            print("  2. CLI")
-            print("  3. ChangeProposer")
-            print("  4. Bridge")
-            print()
-
-            choice = input(f"{Colors.CYAN}Opción (1-4): {Colors.ENDC}").strip()
-
-            agent_filter = None
-            if choice == '2':
-                agent_filter = "CLI"
-            elif choice == '3':
-                agent_filter = "ChangeProposer"
-            elif choice == '4':
-                agent_filter = "Bridge"
-
-            # Obtener historial
-            history = self.bridge.get_history(agent=agent_filter, limit=50)
-
-            if not history:
-                print_warning("No hay acciones registradas")
-                return
-
-            print()
-            print(f"{Colors.BOLD}Total acciones: {len(history)}{Colors.ENDC}")
-            print()
-
-            for entry in history:
-                timestamp = entry['timestamp'][:19]
-                agent = entry['agent']
-                action = entry['action']
-
-                # Color según agente
-                if agent == "CLI":
-                    color = Colors.CYAN
-                elif agent == "Bridge":
-                    color = Colors.YELLOW
-                else:
-                    color = Colors.GREEN
-
-                print(f"[{timestamp}] {color}{agent}{Colors.ENDC}: {action}")
-
-                # Mostrar detalles si existen
-                details = entry.get('details', {})
-                if details and isinstance(details, dict):
-                    for key, value in list(details.items())[:3]:
-                        if isinstance(value, str) and len(value) < 80:
-                            print(f"  → {key}: {value}")
-                print()
-
-        except Exception as e:
-            print_error(f"Error: {e}")
-
+    
     def search_in_system(self):
         """Buscar en sistema específico"""
         print_section("Búsqueda en Sistema", "dual")
@@ -1110,23 +890,13 @@ class AiphaLabCLI:
         """Menú principal mejorado"""
         while True:
             print_header()
-
+            
             current_provider = self.config.get('llm_provider', 'No configurado')
-            bridge_status = "✅ Activo" if self.bridge else "❌ Inactivo"
-
-            # NUEVA LISTA DE OPCIONES
+            
             options = [
                 f"{Symbols.GEAR} Configuración Inicial / Cambiar LLM",
                 f"{Symbols.ROBOT} Ver Configuración Actual (LLM: {current_provider})",
                 f"{Symbols.DUAL} Verificar Salud del Sistema",
-                "",  # Separador visual
-                "─── ANÁLISIS AIPHA_0.0.1 ───",
-                f"{Symbols.V0} Estado de Aipha_0.0.1 (Bridge: {bridge_status})",
-                f"{Symbols.LIGHTBULB} Obtener Siguiente Tarea",
-                f"{Symbols.ROCKET} Ejecutar Instrucción Dev → Aipha",
-                f"{Symbols.BOOK} Ver Historial de Acciones",
-                "",  # Separador visual
-                "─── ANÁLISIS DUAL (v0 + v1) ───",
                 f"{Symbols.DUAL} Resumen Dual (v0 + v1)",
                 f"{Symbols.V0} Consultar Aipha_0.0.1 (interactivo)",
                 f"{Symbols.V1} Consultar Aipha_1.0 (interactivo)",
@@ -1135,72 +905,56 @@ class AiphaLabCLI:
                 f"{Symbols.BOOK} Aprender de Aipha_1.0",
                 f"{Symbols.CHART} Ver Estadísticas",
             ]
-
+            
             print_menu(options)
-
+            
             try:
                 choice = input(f"{Colors.CYAN}{Symbols.ARROW} Opción: {Colors.ENDC}").strip()
-
+                
                 if choice == '0':
                     print()
                     print_info("¡Hasta luego! 👋")
                     sys.exit(0)
-
+                
                 elif choice == '1':
                     self.setup_wizard()
                     input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
+                
                 elif choice == '2':
                     self.view_current_config()
-
+                
                 elif choice == '3':
                     self.health_check()
                     input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
-                # NUEVAS OPCIONES AIPHA_0.0.1 (5-8)
-                elif choice == '5':
-                    self.show_aipha_status()
-                    input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
-                elif choice == '6':
-                    self.show_next_task()
-                    input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
-                elif choice == '7':
-                    self.execute_dev_instruction()
-                    input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
-                elif choice == '8':
-                    self.view_action_history()
-                    input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
-                # OPCIONES DUAL EXISTENTES (10-16)
-                elif choice == '10':
+                
+                elif choice == '4':
                     self.show_dual_overview()
                     input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
-                elif choice in ['11', '12', '13', '15']:
+                
+                elif choice in ['5', '6', '7', '9']:  # Opciones que usan LLM
+                    # Verificar salud antes de permitir
                     if not self.health_check():
                         print_warning("Corrige los problemas antes de continuar")
                         input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
                         continue
-
-                    if choice == '11':
+                    
+                    if choice == '5':
                         self.interactive_query_v0()
-                    elif choice == '12':
+                    elif choice == '6':
                         self.interactive_query_v1()
-                    elif choice == '13':
+                    elif choice == '7':
                         self.compare_component()
                         input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-                    elif choice == '15':
+                    elif choice == '9':
                         self.learn_from_v1()
                         input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
-                elif choice == '14':
+                
+                elif choice == '8':
                     self.search_in_system()
                     input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
-                elif choice == '16':
+                
+                elif choice == '10':
+                    # Mostrar stats de ambos sistemas
                     if self.initialize_systems("both"):
                         print_section("Estadísticas", "dual")
                         print_system("Aipha_0.0.1:", "v0")
@@ -1211,18 +965,21 @@ class AiphaLabCLI:
                         print(self.shadow_v1.format_for_display(
                             self.shadow_v1.get_system_overview()))
                     input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
+                
                 else:
                     print_error("Opción no válida")
                     input(f"\n{Colors.CYAN}Presiona Enter...{Colors.ENDC}")
-
+            
             except KeyboardInterrupt:
                 print()
                 print_info("¡Hasta luego! 👋")
                 sys.exit(0)
             except EOFError:
                 print()
-                print_info("Modo no interactivo detectado")
+                print_info("Modo no interactivo detectado. Ejecutando análisis automático...")
+                if self.initialize_systems("both"):
+                    self.show_dual_overview()
+                print_info("¡Hasta luego! 👋")
                 sys.exit(0)
             except Exception as e:
                 print_error(f"Error inesperado: {e}")
